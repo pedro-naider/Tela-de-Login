@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.img_caixa {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(24, 108, 235);
+    padding: 20px;
+}
+
+.img_caixa img {
+    width: 100%;
+    height: 100%;
+}
+
+.container_caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.container_caixa .forma_caixa {
+    width: 50%;
+}
+
+.container_caixa .forma_caixa .ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_caixa .forma_caixa .ul li {
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: 0. 3s;
+}
+
+.container_caixa .forma_caixa .ul li:hover {
+    background: #e4e4e4;
+}
+
+.forma_caixa .ul li img {
+    width: 40px;
+}
+
+.container_caixa .forma_caixa h2 {
+    color: #32324f;
+    font-weight: 700;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container_caixa .forma_caixa .input_caixa {
+    margin-bottom: 20px;
+}
+
+.container_caixa .forma_caixa .input_caixa input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 500;
+    border: none;
+    font-size: 17px;
+    color: #2c2c44;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.container_caixa .forma_caixa .input_caixa span {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #2c2c44;
+    font-weight: 400;
+}
+
+.container_caixa .forma_caixa .input_caixa input::placeholder {
+    color: #b5afc4;
+}
+
+.container_caixa .forma_caixa .input_caixa input[type=submit] {
+    background: #3590db;
+    color: #f0f0f0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.container_caixa .forma_caixa .input_caixa input[type=submit]:hover {
+    background: #4621ec;
+}
+
+.container_caixa .forma_caixa .lembrar {
+    margin-bottom: 20px;
+    color: #32324f;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.container_caixa .forma_caixa .lembrar a {
+    text-decoration: none;
+    color: #008cff;
+}
+
+.container_caixa .forma_caixa .lembrar a:hover {
+    color: #423f6e;
+}
+
+.container_caixa .forma_caixa .input_caixa p a {
+    color: #423f6e;
+}
+
+.container_caixa .forma_caixa .input_caixa p a:hover {
+    color: #4621ec;
+}
+
+.container_caixa .forma_caixa h3 {
+    color: rgb(35, 4, 48);
+    text-decoration: none;
+    margin: 40px 0 15px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+}
+
+.input_caixa:hover {
+    color: rgb(26, 1, 23);
+    transition: 0.3s;
+}
+
+@media (max-width:868px) {
+    .container_login .img_caixa {
+        display: none;
+    }
+
+    .container_login .container_caixa {
+        width: 100%;
+    }
+
+    .container_login .container_caixa .forma_caixa {
+        width: 100%;
+        padding: 40px;
+        background: white;
+        margin: 50px;
+    }
+
+    .container_login .container_caixa .forma_caixa h3 {
+        margin: 30px 0 10px;
+    }
+}
+
+@media (max-width:450px) {
+    .container_login .container_caixa .forma_caixa .lembrar {
+        flex-wrap: wrap;
+    }
+
+    .container_login .container_caixa .forma_caixa .lembrar a {
+        margin-top: 20px;
+    }
+}
